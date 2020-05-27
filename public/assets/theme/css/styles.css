@@ -1,0 +1,16 @@
+.busqueda {
+	width: 60%;
+    float: right;
+}
+
+.busqueda .form-control {
+	height: 40px;
+	border: 1px solid #959595d9;
+    border-right: 0px;
+}
+
+.input-group-btn .btn-search {
+	height: 40px;
+    background: #00a65a;
+    color: white;
+}

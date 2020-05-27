@@ -1,0 +1,382 @@
+
+/** ------------------- INICIO DE SESION ------------------ **/
+.login {
+  background-image: url(../img/education.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.formulario-sesion {
+    width: 70%;
+    position: relative;
+    bottom: 10%;
+    left: 15%;
+    border: 2px solid #9a9a9a;
+    background-color: #ffffff87;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+}
+
+.Campo {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffffc9;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* -------------------------- INDEX ------------------------ */
+
+.header {
+  background: linear-gradient(630deg, #a92424, #ff000061, #ffffffe0);
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  color: #000000;
+  line-height: 2rem;
+}
+
+.bg-transparent {
+    background-color: transparent!important;
+    top: 0%;
+    position: absolute
+}
+
+.mainUser .nav-link {
+  color: #ffffff!important;
+  font-size: 1rem;
+}
+.mainUser .nav-link:hover {
+  background-color: #0000000d!important;
+}
+
+/* Dropdown */
+.mainUser .dropdown-menu {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.mainUser .dropdown-menu .dropdown-item:hover {
+  background-color: #ffffff2e!important;
+}
+
+.raya {
+  background: #d13838;
+}
+
+ /** ---------------------- NAVEGACION ----------------- **/
+
+.navegacion {
+  background-color: #ffffff; /*#4f4f4f*/ /*#d13838*/
+  border-top: 1px solid rgba(0,0,0,.15);
+  border-bottom: 1px solid rgba(0,0,0,.15);
+
+}
+.navbar-light .navbar-toggler{
+  background-color: #ffffff;
+}
+
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 16rem;
+  font-size: 1.25rem;
+  color: #212529;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-item .nav-link {
+    color: #000000;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+ }
+
+.nav-item .nav-link:hover {
+      background-color: #f1f1f1; /*#656565*/ /*#a92e2e*/
+      color: #000;
+ }
+
+/*.dropdown-menu.show {
+  display: block;
+  left: 22%;
+  font-size: 1.1rem;
+}
+
+.procesos.show {
+  display: block;
+  left: 41%;
+}*/
+
+.dropdown-menu .sublist:hover {
+  background-color: #f1f1f1;
+}
+
+/** -------------------- MINI-NAVEGACION -------------------- **/
+.categoria p {
+    font-size: .9rem;
+    opacity: 0;
+    padding-top: 30px;
+    transition: all .3s ease;
+}
+.categoria {
+    overflow: hidden;
+    padding-bottom: 60px;
+    height: calc(auto + 30px);
+}
+
+.categoria a:hover {
+    text-decoration: none;
+}
+
+.categoria h3::before {
+    content: '';
+    display: block;
+    margin: 0 auto 20px auto;
+    height: 1px;
+    color: #0000;
+    width: 60px;
+    background-color: #d13838;
+    transition: all .3s ease;
+}
+.categoria:hover h3::before{
+    width: 180px;
+    color: #343434;
+    text-decoration: none;
+}
+/*.categoria:hover p {
+    font-size: .9rem;
+    display: block;
+    opacity: 1;
+    padding-top: 10px;
+    color: #999;
+}*/
+.categoria h3 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+ /** --------------------- TABLA ------------------- **/
+
+.titulo {
+  border-left: 5px solid #d13838;
+  margin-left: 30px;
+  padding-left: 10px;
+}
+
+.thead {
+  color: #ffffff;
+}
+
+ /* --------------------- FOOTER ----------------------- */
+
+ .copyright {
+      color:#000000;
+      font-size: .8rem;
+ }
+
+ /** BIENVENIDO **/
+/* .bienvenido {
+      background-image: url(../img/student.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #000000;
+ }
+
+ @media (min-width: 992px) {
+      .bienvenido {
+          background-size: cover;
+      }
+ }*/
+
+ /*--------------------------------------------------------------------*/
+
+ /* CAROUSEL**/
+
+ .carousel-caption h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+
+ }
+
+ /** Nuevo sitio **/
+
+.nuevo-sitio {
+  background-color: #ffffff;
+}
+
+.nuevo-sitio p {    
+    font-family: 'Lato', sans-serif;
+    color: #979797;
+    font-size: 1.6rem;
+ }
+
+ /** Servicios **/
+
+.titulo span {
+    font-size: 1.8rem;
+    font-family: 'Italianno', sans-serif;
+    color: #e082a8;
+}
+
+ .imagen-servicio img {
+      border: 6px solid #f1efe8;
+      -webkit-transition: transform .3s ease;
+      -ms-transition: transform .3s ease;
+      transition: transform .3s ease;
+ }
+ .imagen-servicio img:hover {
+      -webkit-transform: scale(1.2) rotate(10deg);
+      -ms-transform: scale(1.2) rotate(10deg);
+      transform: scale(1.2) rotate(10deg);
+ }
+ .servicio-info {
+      border-top: 5px;
+      border: 1px solid #4f4f4f;
+      background-color: #ffffff;
+      margin-top: -5rem;
+ }
+ .servicio-info .btn-primary {
+      border-radius: 0;
+      background-color: #4f4f4f;
+      border: none;
+ }
+ .servicio-info .btn-primary:hover {
+      background-color: #656565;
+ }
+
+
+
+
+ /* PRODUCTOS */
+
+/* .productos .card {
+      border: none;
+ }*/
+
+ .productos .card a {
+      color: #000000;
+ }
+ .productos .card a:hover {
+      background: #f1efe8;
+      text-decoration: none;
+ }
+
+ .productos .card h4 {
+      color: #e082a8;
+      font-size: 1.2rem;
+      font-family: 'Lato', sans-serif;
+ }
+
+ .productos .card p {
+      font-size: .8rem;
+ }
+ .productos .card .precio {
+      font-size: 1.6rem;
+      color: #979797;
+ }
+
+ /** Citas **/
+ .citas {
+      background-image: url(../img/bg_citas.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #ffffff;
+ }
+
+ @media (min-width: 992px) {
+      .citas {
+          background-size: cover;
+      }
+ }
+ .citas h3 {
+      font-size: 3rem;
+      font-family: 'Lato', sans-serif;
+ }
+ .citas p {
+      font-size: 1.2rem;
+      line-height: 2.6rem;
+ }
+
+/** SIDEBAR **/
+
+aside {
+     background-color: #f1efe8;
+     color: #000000;
+}
+
+/** Accordion / Servicios **/
+
+#servicios .card-header {
+     background-color: #e082a8;
+     padding: 0 1.25rem;
+}
+#servicios .card-header .btn-link {
+     color: #ffffff;
+     font-family: 'Lato', sans-serif;
+     font-size: 1.6rem;
+}
+#servicios .card-body {
+     font-size: 1.3rem;
+}
+
+/* cupon*/
+.cupon {
+     border: 3px dashed #ffffff;
+     font-family: 'Lato', sans-serif;
+}
+.cupon .display-4 {
+     font-size: 2rem;
+}
+.cupon p {
+     font-size: 1.2rem;
+}
+
+/* PRODUCTOS **/
+
+@media (min-width: 576px) {
+     .card-columns {
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+          -webkit-column-gap: 1.25rem;
+          -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+      }
+}
+@media (min-width: 992px) {
+     .card-columns {
+          -webkit-column-count: 4;
+          -moz-column-count: 4;
+          column-count: 4;
+      }
+}
