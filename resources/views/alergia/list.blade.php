@@ -66,7 +66,7 @@
                                 <td>{{ $alergia->id }}</td>
                                 <td>{{ $alergia->nombre }}</td>
                                 <td>{{ $alergia->descripcion }}</td>
-                                <td>{{ $alergia->tipos->name }}</td>
+                                <td>{{ $alergia->name }}</td>
                                 <td>
                                     <a href="{{ route('alergia.edit', $alergia->id) }}" class="btn btn-primary">
                                         <i class="fa fa-edit"></i>

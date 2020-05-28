@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\tipo_discapacidad;
+use App\Tipo_discapacidad;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -19,7 +19,9 @@ class TipoDiscapacidadController extends Controller
 
         $variablesurl = $request->all();
         
-        $tipos_d = tipo_discapacidad::where('tipo_d','like',"%$nombre%")->orderBy('id','asc')->paginate(4)
+        $tipos_d = Tipo_discapacidad::select('discapacidads.id','discapacidads.discapacidad','discapacidads.descripciones','tipo_discapacidads.tipo_d')
+        ->join('tipo_discapacidads', 'discapacidads.tipoDiscapacidad_id','=','tipo_discapacidads.id')
+        ->where('tipo_d','like',"%$nombre%")->orderBy('id','asc')->paginate(4)
         ->appends($variablesurl);
 
         return view('tipoDiscapacidad.list', compact('tipos_d'));

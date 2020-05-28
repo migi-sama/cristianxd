@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Alergia;
-use App\tipo_alergia;
+use App\Tipo_alergia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -20,7 +20,9 @@ class AlergiaController extends Controller
 
         $variablesurl = $request->all();        
 
-        $alergias = Alergia::where('nombre','like',"%$nombre%")->orderBy('id','asc')->paginate(4)
+        $alergias = Alergia::select('alergias.id','alergias.nombre','alergias.descripcion','tipo_alergias.name' )
+        ->join('tipo_alergias','alergias.tipoAlergia_id','=','tipo_alergias.id')
+        ->where('nombre','like',"%$nombre%")->orderBy('id','asc')->paginate(4)
         ->appends($variablesurl);
 
         return view('alergia.list', compact('alergias'));
@@ -33,7 +35,7 @@ class AlergiaController extends Controller
      */
     public function create()
     {
-        $tipos = tipo_alergia::all();
+        $tipos = Tipo_alergia::all();
         return view('alergia.create', compact('tipos'));
     }
 

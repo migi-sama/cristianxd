@@ -73,7 +73,7 @@
                                     {{ $discapacidad->descripciones }}
                                 </td>
                                 <td>
-                                    {{ $discapacidad->tipo->tipo_d }}
+                                    {{ $discapacidad->tipo_d }}
                                 </td>
                                 <td>
                                     <a href="{{ route('discapacidad.edit', $discapacidad->id) }}" class="btn btn-primary">

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Discapacidad;
-use App\tipo_discapacidad;
+use App\Tipo_discapacidad;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -33,7 +33,7 @@ class DiscapacidadController extends Controller
      */
     public function create()
     {
-        $tipos_d = tipo_discapacidad::all();
+        $tipos_d = Tipo_discapacidad::all();
         return view('discapacidad.create', compact('tipos_d'));
     }
 

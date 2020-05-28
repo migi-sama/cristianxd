@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\tipo_alergia;
+use App\Tipo_alergia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -19,7 +19,7 @@ class TipoAlergiaController extends Controller
 
         $variablesurl = $request->all();
         
-        $tipos = tipo_alergia::where('name','like',"%$nombre%")->orderBy('id','asc')->paginate(4)
+        $tipos = Tipo_alergia::where('name','like',"%$nombre%")->orderBy('id','asc')->paginate(4)
         ->appends($variablesurl);
 
         return view('tipoAlergia.list', compact('tipos'));
